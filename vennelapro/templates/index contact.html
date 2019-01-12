@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ContactUs</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    .container {
+        margin: 30px auto;
+        background-color: aqua;
+    }
+    form {
+        background-color: blue;
+        border: 2px solid yellow;
+        border-radius: 10px;
+        padding: 5px 28px;
+    }
+    body {
+        background-color: antiquewhite;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>ContactUs</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <form method="post">
+                {% csrf_token %}
+                {{ form }}
+                <center><input type="submit" value="submit" class="btn btn-default btn-md"></center>
+            </form>
+        </div>
+        <div class ='col-sm-8'>
+            <h1> <marquee behaviour ="alternate" scrollamount="16">
+                WELCOME TO<b>Django FRAMEWORK</b>
+                </marquee></h1>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+</body>
+
+</html>
